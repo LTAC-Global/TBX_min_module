@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:teix="http://www.tei-c.org/ns/Examples"
+   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+   ns="http://www.tbxinfo.net/ns/dct/min">
+   <!-- optional metaType attribute -->
+   <define name="metaType">
+      <optional>
+         <attribute name="metaType">
+            <choice>
+               <value>admin</value>
+               <value>adminNote</value>
+               <value>descrip</value>
+               <value>descripNote</value>
+               <value>ref</value>
+               <value>termNote</value>
+               <value>transac</value>
+               <value>transacNote</value>
+               <value>xref</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <!-- descrip classified elements -->
+   <define name="module.admin">
+      <choice>
+         <element name="customerSubset">
+            <text/>
+         </element>
+      </choice>
+   </define>
+   <define name="module.descrip">
+      <choice>
+         <element name="partOfSpeech">
+            <choice>
+               <value>adjective</value>
+               <value>noun</value>
+               <value>other</value>
+               <value>verb</value>
+               <value>adverb</value>
+            </choice>
+         </element>
+         <element name="subjectField">
+            <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0">
+               (subjectField) A field of special knowledge. Subject fields shall be expressed in
+               plainText, and preferably be selected from a defined set of picklist values. Subject
+               fields shall be specified at the concept (termEntry) level.</documentation>
+            <choice>
+               <text/>
+            </choice>
+         </element>
+      </choice>
+   </define>
+
+   <!-- termNote classified elements -->
+   <define name="module.termNote">
+      <element name="administrativeStatus">
+         <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0"> (termType) A
+            categorization of a term with respect to formal representations of terms or where or how
+            they are used, for example, acronym. For TBX-Basic, the content of the termNote element
+            when it has a type attribute value of termType shall be one of the following: *
+            abbreviatedForm * fullForm. Refer to the TBX-Basic specification for definitions of the
+            above term types.</documentation>
+         <choice>
+            <value>admitted</value>
+            <value>notRecommended</value>
+            <value>obsolete</value>
+            <value>preferred</value>
+         </choice>
+      </element>
+   </define>
+
+   <start>
+      <choice>
+         <ref name="module.admin"/>
+         <ref name="module.descrip"/>
+         <ref name="module.termNote"/>
+      </choice>
+   </start>
+</grammar>
