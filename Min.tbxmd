@@ -10,10 +10,10 @@
 value of the name attribute. -->
         <termNoteSpec name="administrativeStatus" datcatId="http://www.datcatinfo.net/datcat/DC-168">
             <contents datatype="picklist">
-                <value>admitted</value>
-                <value>notRecommended</value>
-                <value>obsolete</value>
-                <value>preferred</value>
+                <value>admittedTerm-admn-sts</value>
+                <value>deprecatedTerm-admn-sts</value>
+                <value>supersededTerm-admn-sts</value>
+                <value>preferredTerm-admn-sts</value>
             </contents>
         </termNoteSpec>
         <adminSpec name="customerSubset" datcatId="http://www.datcatinfo.net/datcat/DC-165">
