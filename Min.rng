@@ -55,17 +55,14 @@
    <!-- termNote classified elements -->
    <define name="module.termNote">
       <element name="administrativeStatus">
-         <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0"> (termType) A
-            categorization of a term with respect to formal representations of terms or where or how
-            they are used, for example, acronym. For TBX-Basic, the content of the termNote element
-            when it has a type attribute value of termType shall be one of the following: *
-            abbreviatedForm * fullForm. Refer to the TBX-Basic specification for definitions of the
-            above term types.</documentation>
+         <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0">The status of a term within a certain working environment. 
+            The data-category administrativeStatus should be linked, through a target attribute, to a in the back matter that identifies the 
+            administrative organization that determined the status.</documentation>
          <choice>
-            <value>admitted</value>
-            <value>notRecommended</value>
-            <value>obsolete</value>
-            <value>preferred</value>
+            <value>admittedTerm-admn-sts</value>
+            <value>deprecatedTerm-admn-sts</value>
+            <value>supersededTerm-admn-sts</value>
+            <value>preferredTerm-admn-sts</value>
          </choice>
       </element>
    </define>
