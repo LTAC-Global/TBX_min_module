@@ -2,7 +2,7 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <ns uri="urn:iso:std:iso:30042:ed:3.0" prefix="tbx" />
-    <ns uri="http://www.tbxinfo.net/ns/dct/min" prefix="min" />
+    <ns uri="http://www.tbxinfo.net/ns/min" prefix="min" />
     
     <!-- Min Module Rules -->
     <pattern id="module.min.admin">
