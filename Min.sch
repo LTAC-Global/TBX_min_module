@@ -15,4 +15,9 @@
             <assert test="parent::tbx:conceptEntry or parent::tbx:descripGrp/parent::tbx:conceptEntry">Subject Field can only appear at conceptEntry level.</assert>
         </rule>
     </pattern>
+    <pattern id="module.min.termNote">
+        <rule context="min:administrativeStatus|min:partOfSpeech">
+            <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::termSec">termNote elements must not occur outside the termSec level.</assert>
+        </rule>
+    </pattern>
 </schema>
