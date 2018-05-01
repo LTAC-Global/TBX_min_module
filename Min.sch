@@ -7,7 +7,8 @@
     <!-- Min Module Rules -->
     <pattern id="module.min.admin">
         <rule context="min:customerSubset">
-            <assert test="parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Customer Subset may only appear at the termSec level</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:adminGrp/parent::conceptEntry or
+                parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Customer Subset may only appear at the termSec level</assert>
         </rule>
     </pattern>
     <pattern id="module.min.descrip">

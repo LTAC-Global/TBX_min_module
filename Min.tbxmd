@@ -18,11 +18,12 @@ value of the name attribute. -->
         </termNoteSpec>
         <adminSpec name="customerSubset" datcatId="http://www.datcatinfo.net/datcat/DC-165">
             <levels>
+                <level>conceptEntry</level>
                 <level>termSec</level>
             </levels>
             <contents datatype="PCDATA"/>
         </adminSpec>
-        <termNoteSpec name="partOfSpeech" datcatId="http://www.datcatinfo.net/datcat/DC-1345">
+        <termNoteSpec name="partOfSpeech" datcatId="http://www.datcatinfo.net/datcat/DC-396">
             <contents datatype="picklist">
                 <value>adjective</value>
                 <value>noun</value>
