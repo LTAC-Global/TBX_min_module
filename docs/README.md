@@ -9,7 +9,7 @@
 
 ## 1.1 (2019-04-11)
 
-### Changelog
+### Changes
 - Migrated /externalCrossReference/ from Basic module to Min Module
 - /externalCrossReference/ is now allowed at all levels
 
