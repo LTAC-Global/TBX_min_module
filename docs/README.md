@@ -1,5 +1,12 @@
 # Min Module Versions
 
+## 1.1.1 (2023-02-10)
+### Changes
+- Old release links have been removed
+
+#### [Definition](https://github.com/LTAC-Global/TBX_min_module/releases/latest/download/Min_Module_Definition.pdf)
+#### [Download](https://github.com/LTAC-Global/TBX_min_module/releases/download/v1.1.1/TBX_min_module_v1.1.1.zip)
+
 ## 1.1 (2019-04-11)
 
 ### Changelog
@@ -9,9 +16,5 @@
 Note: These changes are related to the use of /externalCrossReference/ in conjunction
 with <hi> to facilitate inline URI linking in TBX-Min and above.
 
-#### [Definition](https://ltac-global.github.io/TBX_min_module/TBX_min_module_1.1/Min%20Module%20Definition.pdf)
-#### [Download](https://ltac-global.github.io/TBX_min_module/TBX_min_module_1.1.zip)
-
 ## 1.0 (2018-05-01)
-#### [Definition](https://ltac-global.github.io/TBX_min_module/TBX_min_module_1.0/Min%20Module%20Definition.pdf)
-#### [Download](https://ltac-global.github.io/TBX_min_module/TBX_min_module_1.0.zip)
+- initial commit
